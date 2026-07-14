@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Portfolio Page
+   Filters • Portfolio Grid • Thumbnail Cards • Empty States
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Filters
+   ========================================================================== */
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 44px;
+}
+
+.filter-chip {
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+  color: #171208;
+  background: var(--highlight);
+  border-color: var(--highlight);
+}
+
+/* ==========================================================================
+   Portfolio Grid
+   ========================================================================== */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 26px;
+}
+
+/* ==========================================================================
+   Portfolio Card Information
+   ========================================================================== */
+
+.thumb-info {
+  padding: 18px 20px 22px;
+}
+
+.thumb-info h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Portfolio States
+   Empty • Error
+   ========================================================================== */
+
+.portfolio-empty,
+.portfolio-error {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}

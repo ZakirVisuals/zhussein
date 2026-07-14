@@ -1,0 +1,46 @@
+{
+  "site": {
+    "name": "ZakirVisuals",
+    "tagline": "Designing Thumbnails That Get Clicks.",
+    "description": "Professional Graphic Designer specializing in YouTube Thumbnails, Social Media Designs and Branding.",
+    "author": "Zakir Hussein",
+    "email": "thezakirvisuals@gmail.com",
+    "phone": "+92-315-3541214",
+    "location": "Jacobabad, Sindh, Pakistan",
+    "website": "https://yourwebsite.netlify.app"
+  },
+
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "github": "",
+    "fiverr": "",
+    "upwork": "",
+    "youtube": ""
+  },
+
+  "theme": {
+    "default": "dark",
+    "allowToggle": true
+  },
+
+  "contact": {
+    "emailjs": {
+      "serviceID": "service_iz55npm",
+      "templateID": "template_47wheja",
+      "publicKey": "OSzA35jeCc_k8Y0Wi"
+    }
+  },
+
+  "seo": {
+    "title": "ZakirVisuals Portfolio",
+    "description": "Professional Graphic Designer Portfolio.",
+    "keywords": [
+      "Graphic Designer",
+      "YouTube Thumbnail",
+      "Social Media Design",
+      "Brand Identity"
+    ]
+  }
+}

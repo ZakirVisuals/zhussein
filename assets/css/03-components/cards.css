@@ -1,0 +1,383 @@
+/* ==========================================================================
+   Cards
+   Base Card • Statistics • Portfolio • Services • Testimonials
+   ========================================================================== */
+
+/* ==========================================================================
+   Base Card
+   ========================================================================== */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  transition: transform var(--transition-fast),
+              border-color var(--transition-fast),
+              background var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+}
+
+/* ==========================================================================
+   Statistics Cards
+   ========================================================================== */
+
+.stat-card {
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.stat-card .stat-number {
+  font-family: var(--font-mono);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--highlight);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-card .stat-label {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+/* ==========================================================================
+   Portfolio Cards
+   ========================================================================== */
+
+.thumb-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.thumb-card::before,
+.thumb-card::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--highlight);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.thumb-card::before {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.thumb-card::after {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+}
+
+.thumb-card:hover::before,
+.thumb-card:hover::after {
+  opacity: 1;
+}
+
+.thumb-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.thumb-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms var(--ease);
+}
+
+.thumb-card:hover .thumb-media img {
+  transform: scale(1.06);
+}
+
+.thumb-category {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 15, 18, 0.78);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  color: var(--highlight);
+}
+
+.thumb-info {
+  padding: 18px 20px 22px;
+}
+
+.thumb-info h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Service Cards
+   ========================================================================== */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.service-card h3 {
+  margin-top: 4px;
+}
+
+.service-price {
+  font-family: var(--font-mono);
+  color: var(--highlight);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.service-price span {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.service-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.service-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.service-features li svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--highlight);
+}
+
+.service-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ==========================================================================
+   Testimonial Cards
+   ========================================================================== */
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  color: var(--highlight);
+  font-size: 0.95rem;
+}
+
+.testimonial-quote {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.author-meta strong {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.author-meta span {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   Loading & Skeleton States
+   Used for JSON (Portfolio • Services • Testimonials • FAQs)
+   ========================================================================== */
+
+/* ==========================================================================
+   Loading Card
+   ========================================================================== */
+
+.card-loading {
+
+  pointer-events: none;
+  user-select: none;
+
+}
+
+.card-loading * {
+
+  visibility: hidden;
+
+}
+
+
+/* ==========================================================================
+   Skeleton Base
+   ========================================================================== */
+
+.skeleton {
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--card);
+
+  border-radius: var(--radius-md);
+
+}
+
+
+/* ==========================================================================
+   Skeleton Animation
+   ========================================================================== */
+
+.skeleton::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  transform: translateX(-100%);
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.08),
+    transparent
+  );
+
+  animation: skeleton-loading 1.4s infinite;
+
+}
+
+
+/* ==========================================================================
+   Skeleton Elements
+   ========================================================================== */
+
+.skeleton-image {
+
+  width: 100%;
+  aspect-ratio: 16 / 10;
+
+  border-radius: var(--radius-md);
+
+}
+
+.skeleton-title {
+
+  width: 70%;
+  height: 18px;
+
+  margin-top: 18px;
+
+  border-radius: var(--radius-sm);
+
+}
+
+.skeleton-text {
+
+  width: 100%;
+  height: 12px;
+
+  margin-top: 12px;
+
+  border-radius: var(--radius-sm);
+
+}
+
+.skeleton-text:last-child {
+
+  width: 60%;
+
+}
+
+
+/* ==========================================================================
+   Skeleton Animation
+   ========================================================================== */
+
+@keyframes skeleton-loading {
+
+  100% {
+
+    transform: translateX(100%);
+
+  }
+
+}

@@ -1,0 +1,336 @@
+/* ==========================================================================
+   Responsive Styles
+   Tablet • Mobile • Small Mobile
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Large Tablets & Small Laptops
+   Max Width: 1024px
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+  /* ---------------- Hero ---------------- */
+
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy p {
+    max-width: 100%;
+  }
+
+  /* ---------------- About ---------------- */
+
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-portrait {
+    max-width: 360px;
+    aspect-ratio: 4/3;
+  }
+
+  /* ---------------- Services ---------------- */
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------------- Testimonials ---------------- */
+
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------------- Footer ---------------- */
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------------- Contact ---------------- */
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ==========================================================================
+   Tablets & Mobile
+   Max Width: 768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* ---------------- Global ---------------- */
+
+  section {
+    padding: 72px 0;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  /* ---------------- Navigation ---------------- */
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 22px 20px;
+    gap: 2px;
+    transform: translateY(-130%);
+    opacity: 0;
+    transition: transform var(--transition),
+                opacity var(--transition);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
+
+  .main-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .main-nav a {
+    padding: 13px 14px;
+  }
+
+  .header-actions .btn span {
+    display: inline;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* ---------------- Home ---------------- */
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dp-body {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .dp-stats {
+    width: 100%;
+  }
+
+  /* ---------------- Services ---------------- */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------------- Testimonials ---------------- */
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------------- About ---------------- */
+
+  .about-hero {
+    gap: 36px;
+  }
+
+  /* ---------------- Footer ---------------- */
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* ---------------- CTA ---------------- */
+
+  .cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 28px;
+  }
+
+  /* ---------------- Contact ---------------- */
+
+  .form-card {
+    padding: 26px;
+  }
+
+  /* ---------------- Floating WhatsApp ---------------- */
+
+  .float-whatsapp {
+    bottom: 18px;
+    right: 18px;
+    width: 52px;
+    height: 52px;
+  }
+
+   
+
+    .header-actions a.btn {
+        display: none !important;
+    }
+
+}
+
+
+
+
+/* ==========================================================================
+   Small Mobile Devices
+   Max Width: 480px
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+  /* ---------------- Typography ---------------- */
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  /* ---------------- Hero ---------------- */
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-proof {
+    gap: 22px;
+  }
+
+  /* ---------------- Portfolio ---------------- */
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------------- CTA ---------------- */
+
+  .cta-banner .btn {
+    width: 100%;
+  }
+
+}
+
+/* ==========================================================================
+   Theme Toggle Responsive
+   Mobile • Tablet • Desktop
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Large Tablets
+   ========================================================================== */
+
+@media (max-width: 992px) {
+
+  .theme-toggle {
+
+    width: 46px;
+    height: 46px;
+
+  }
+
+}
+
+
+/* ==========================================================================
+   Tablets & Mobile
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* ---------------- Header Actions ---------------- */
+
+  .header-actions {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+  }
+
+  /* ---------------- Theme Toggle ---------------- */
+
+  .theme-toggle {
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+  }
+
+  .theme-toggle svg {
+
+    width: 20px;
+    height: 20px;
+
+  }
+
+}
+
+
+/* ==========================================================================
+   Small Mobile
+   ========================================================================== */
+
+@media (max-width: 576px) {
+
+  .theme-toggle {
+
+    width: 42px;
+    height: 42px;
+
+  }
+
+  .theme-toggle svg {
+
+    width: 18px;
+    height: 18px;
+
+  }
+
+}
+
+
+/* ==========================================================================
+   Extra Small Devices
+   ========================================================================== */
+
+@media (max-width: 400px) {
+
+  .header-actions {
+
+    gap: 8px;
+
+  }
+
+  .theme-toggle {
+
+    width: 40px;
+    height: 40px;
+
+  }
+
+}

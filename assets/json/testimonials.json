@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Khan",
+    "company": "YouTube Creator",
+    "country": "Pakistan",
+    "rating": 5,
+    "image": "assets/images/testimonials/ahmed-khan.webp",
+    "review": "Excellent thumbnail designer. My video's click-through rate improved significantly after using ZakirVisuals.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Sarah Williams",
+    "company": "Content Creator",
+    "country": "United Kingdom",
+    "rating": 5,
+    "image": "assets/images/testimonials/sarah-williams.webp",
+    "review": "Professional communication, fast delivery and amazing quality. Highly recommended.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Ali Raza",
+    "company": "Business Owner",
+    "country": "Pakistan",
+    "rating": 5,
+    "image": "assets/images/testimonials/ali-raza.webp",
+    "review": "The branding package exceeded my expectations. Everything looked clean and premium.",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "John Carter",
+    "company": "Digital Marketer",
+    "country": "United States",
+    "rating": 5,
+    "image": "assets/images/testimonials/john-carter.webp",
+    "review": "Creative designs, attention to detail and always delivered on time.",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Fatima Noor",
+    "company": "Social Media Manager",
+    "country": "UAE",
+    "rating": 5,
+    "image": "assets/images/testimonials/fatima-noor.webp",
+    "review": "Our social media engagement improved after using the new graphics. Great experience.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "David Miller",
+    "company": "Startup Founder",
+    "country": "Canada",
+    "rating": 5,
+    "image": "assets/images/testimonials/david-miller.webp",
+    "review": "High-quality work with quick revisions. I will definitely work together again.",
+    "featured": true
+  }
+]

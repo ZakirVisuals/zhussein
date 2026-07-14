@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "Gaming YouTube Thumbnail",
+    "category": "YouTube Thumbnail",
+    "description": "High CTR gaming thumbnail with bold typography and vibrant colors.",
+    "image": "assets/images/portfolio/gaming-thumbnail.webp",
+    "client": "Private Client",
+    "year": "2026",
+    "tools": [
+      "Photoshop"
+    ],
+    "featured": true,
+    "live": "",
+    "source": ""
+  },
+  {
+    "id": 2,
+    "title": "Podcast Thumbnail",
+    "category": "YouTube Thumbnail",
+    "description": "Professional podcast thumbnail designed for maximum clicks.",
+    "image": "assets/images/portfolio/podcast-thumbnail.webp",
+    "client": "Private Client",
+    "year": "2026",
+    "tools": [
+      "Photoshop"
+    ],
+    "featured": true,
+    "live": "",
+    "source": ""
+  },
+  {
+    "id": 3,
+    "title": "Islamic Social Media Post",
+    "category": "Social Media",
+    "description": "Elegant Islamic quote design for Facebook and Instagram.",
+    "image": "assets/images/portfolio/islamic-post.webp",
+    "client": "Personal Project",
+    "year": "2026",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "featured": false,
+    "live": "",
+    "source": ""
+  },
+  {
+    "id": 4,
+    "title": "Restaurant Branding",
+    "category": "Brand Identity",
+    "description": "Complete restaurant branding including logo and social media assets.",
+    "image": "assets/images/portfolio/restaurant-brand.webp",
+    "client": "Demo Project",
+    "year": "2026",
+    "tools": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "featured": true,
+    "live": "",
+    "source": ""
+  },
+  {
+    "id": 5,
+    "title": "Business Logo Design",
+    "category": "Logo Design",
+    "description": "Modern minimalist logo created for a professional business.",
+    "image": "assets/images/portfolio/logo-design.webp",
+    "client": "Private Client",
+    "year": "2026",
+    "tools": [
+      "Illustrator"
+    ],
+    "featured": false,
+    "live": "",
+    "source": ""
+  },
+  {
+    "id": 6,
+    "title": "Facebook Banner",
+    "category": "Social Media",
+    "description": "Premium Facebook cover designed for personal branding.",
+    "image": "assets/images/portfolio/facebook-banner.webp",
+    "client": "Personal Project",
+    "year": "2026",
+    "tools": [
+      "Photoshop"
+    ],
+    "featured": false,
+    "live": "",
+    "source": ""
+  }
+]

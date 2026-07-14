@@ -1,0 +1,223 @@
+/* ==========================================================================
+   ZakirVisuals Portfolio
+   File: variables.css
+   Part 1: Shared Variables
+   Purpose: Common Design Tokens
+   ========================================================================== */
+
+:root {
+
+  /* ===========================
+     Fonts
+     =========================== */
+
+  --font-display: "Unbounded", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+
+  /* ===========================
+     Border Radius
+     =========================== */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+
+  /* ===========================
+     Shadows
+     =========================== */
+
+  --shadow-soft: 0 8px 30px rgba(0,0,0,.35);
+  --shadow-lift: 0 16px 46px rgba(0,0,0,.50);
+
+
+  /* ===========================
+     Motion
+     =========================== */
+
+  --ease: cubic-bezier(.4,0,.2,1);
+
+  --transition-fast: 160ms var(--ease);
+  --transition: 240ms var(--ease);
+
+
+  /* ===========================
+     Layout
+     =========================== */
+
+  --container: 1220px;
+  --header-height: 76px;
+
+}
+
+/* ==========================================================================
+   ZakirVisuals Portfolio
+   File: variables.css
+   Part 2: Dark Theme (Default)
+   ========================================================================== */
+
+:root {
+
+  /* ===========================
+     Brand Colors
+     =========================== */
+
+  --primary: #7c4dff;
+  --primary-hover: #9873ff;
+
+  --secondary: #ffc107;
+  --secondary-hover: #ffd54f;
+
+  --success: #4caf50;
+  --error: #ff5c5c;
+
+
+  /* ===========================
+     Background
+     =========================== */
+
+  --bg: #0f0f12;
+  --bg-alt: #131319;
+
+  --surface: #1a1a24;
+  --surface-hover: #212130;
+
+
+  /* ===========================
+     Semantic Aliases
+     =========================== */
+
+  --background: var(--bg);
+  --background-alt: var(--bg-alt);
+
+  --card: var(--surface);
+  --card-hover: var(--surface-hover);
+
+
+  /* ===========================
+     Borders
+     =========================== */
+
+  --border: rgba(255,255,255,.08);
+  --border-strong: rgba(255,255,255,.16);
+
+
+  /* ===========================
+     Accent Colors
+     =========================== */
+
+  --accent: #7c4dff;
+  --accent-soft: rgba(124,77,255,.14);
+  --accent-strong: #9873ff;
+
+  --highlight: #ffc107;
+  --highlight-soft: rgba(255,193,7,.14);
+  --highlight-strong: #ffd54f;
+
+
+  /* ===========================
+     Typography
+     =========================== */
+
+  --text-primary: #f5f5f8;
+  --text-secondary: #9d9dad;
+  --text-tertiary: #6a6a7a;
+
+  --text: var(--text-primary);
+
+
+  /* ===========================
+     Status Colors
+     =========================== */
+
+  --success-soft: rgba(76,175,80,.12);
+  --error-soft: rgba(255,92,92,.12);
+
+}
+
+/* ==========================================================================
+   ZakirVisuals Portfolio
+   File: variables.css
+   Part 3: Light Theme
+   Applied using:
+   <html data-theme="light">
+   ========================================================================== */
+
+[data-theme="light"] {
+
+  /* ===========================
+     Brand Colors
+     =========================== */
+
+  --primary: #6c3dff;
+  --primary-hover: #5930df;
+
+  --secondary: #ffb300;
+  --secondary-hover: #ff9800;
+
+
+  /* ===========================
+     Background
+     =========================== */
+
+  --bg: #f7f8fc;
+  --bg-alt: #ffffff;
+
+  --surface: #ffffff;
+  --surface-hover: #f3f5fb;
+
+
+  /* ===========================
+     Semantic Aliases
+     =========================== */
+
+  --background: var(--bg);
+  --background-alt: var(--bg-alt);
+
+  --card: var(--surface);
+  --card-hover: var(--surface-hover);
+
+
+  /* ===========================
+     Borders
+     =========================== */
+
+  --border: rgba(0,0,0,.08);
+  --border-strong: rgba(0,0,0,.15);
+
+
+  /* ===========================
+     Accent Colors
+     =========================== */
+
+  --accent: #6c3dff;
+  --accent-soft: rgba(108,61,255,.10);
+  --accent-strong: #5930df;
+
+  --highlight: #ffb300;
+  --highlight-soft: rgba(255,179,0,.10);
+  --highlight-strong: #ff9800;
+
+
+  /* ===========================
+     Typography
+     =========================== */
+
+  --text-primary: #141414;
+  --text-secondary: #525252;
+  --text-tertiary: #777777;
+
+  --text: var(--text-primary);
+
+
+  /* ===========================
+     Shadows
+     =========================== */
+
+  --shadow-soft: 0 8px 24px rgba(0,0,0,.08);
+  --shadow-lift: 0 18px 42px rgba(0,0,0,.12);
+
+}

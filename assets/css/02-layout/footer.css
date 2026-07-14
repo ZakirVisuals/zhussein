@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Footer
+   Footer Grid • Brand • Navigation • Social Links • Copyright
+   ========================================================================== */
+
+/* -------------------------------- Footer ---------------------------------- */
+.site-footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 76px 0 0;
+}
+
+/* ------------------------------ Footer Grid ------------------------------- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 56px;
+}
+
+/* ------------------------------ Brand Area ------------------------------- */
+.footer-brand p {
+  margin: 16px 0 20px;
+  font-size: 0.92rem;
+  max-width: 280px;
+}
+
+/* ----------------------------- Footer Links ------------------------------ */
+.footer-col h4 {
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-col a:hover {
+  color: var(--highlight);
+}
+
+/* ----------------------------- Social Icons ------------------------------ */
+.social-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.social-row a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-row a:hover {
+  border-color: var(--highlight);
+  color: var(--highlight);
+}
+
+.social-row svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------------------------- Footer Bottom ------------------------------ */
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-tertiary);
+  flex-wrap: wrap;
+  gap: 10px;
+}

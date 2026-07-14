@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "YouTube Thumbnail Design",
+    "icon": "ri-youtube-fill",
+    "description": "Eye-catching YouTube thumbnails designed to increase clicks and improve video performance.",
+    "features": [
+      "High CTR Design",
+      "Custom Photoshop Editing",
+      "Fast Delivery",
+      "Unlimited Revisions"
+    ],
+    "price": "Starting from $10",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Social Media Design",
+    "icon": "ri-instagram-fill",
+    "description": "Professional social media posts, banners and promotional graphics for all major platforms.",
+    "features": [
+      "Facebook Posts",
+      "Instagram Posts",
+      "LinkedIn Graphics",
+      "Story Designs"
+    ],
+    "price": "Starting from $15",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Logo Design",
+    "icon": "ri-pen-nib-fill",
+    "description": "Modern and memorable logo designs that represent your brand professionally.",
+    "features": [
+      "Minimal Logo",
+      "Modern Style",
+      "Vector Files",
+      "Source Files Included"
+    ],
+    "price": "Starting from $25",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Brand Identity",
+    "icon": "ri-palette-fill",
+    "description": "Complete branding package including logo, colors, typography and brand assets.",
+    "features": [
+      "Brand Guidelines",
+      "Color Palette",
+      "Typography",
+      "Social Branding"
+    ],
+    "price": "Starting from $50",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Print Design",
+    "icon": "ri-printer-fill",
+    "description": "Professional print-ready designs for business cards, flyers, brochures and posters.",
+    "features": [
+      "Business Cards",
+      "Flyers",
+      "Brochures",
+      "Print Ready Files"
+    ],
+    "price": "Starting from $20",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Photo Editing",
+    "icon": "ri-image-edit-fill",
+    "description": "Professional photo retouching, background removal and advanced image enhancement.",
+    "features": [
+      "Background Removal",
+      "Retouching",
+      "Color Correction",
+      "High Resolution Output"
+    ],
+    "price": "Starting from $10",
+    "featured": false
+  }
+]

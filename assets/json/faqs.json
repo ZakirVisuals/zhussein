@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What services do you offer?",
+    "answer": "I specialize in YouTube Thumbnail Design, Social Media Design, Logo Design, Brand Identity, Print Design and Professional Photo Editing."
+  },
+  {
+    "id": 2,
+    "question": "How long does a project take?",
+    "answer": "Most projects are completed within 24 to 72 hours depending on the complexity and number of revisions."
+  },
+  {
+    "id": 3,
+    "question": "Do you provide unlimited revisions?",
+    "answer": "Yes. Reasonable revisions are included to ensure you are completely satisfied with the final design."
+  },
+  {
+    "id": 4,
+    "question": "Which software do you use?",
+    "answer": "I primarily use Adobe Photoshop and Adobe Illustrator to create professional-quality designs."
+  },
+  {
+    "id": 5,
+    "question": "Can I hire you for long-term work?",
+    "answer": "Yes. I am available for both one-time projects and long-term collaborations."
+  },
+  {
+    "id": 6,
+    "question": "How can I place an order?",
+    "answer": "You can contact me through the Contact Form, Fiverr, Upwork, LinkedIn or any social media platform listed on this website."
+  },
+  {
+    "id": 7,
+    "question": "Do you design in Urdu or Arabic?",
+    "answer": "Yes. I can create professional designs in English, Urdu and Arabic according to your requirements."
+  },
+  {
+    "id": 8,
+    "question": "What file formats will I receive?",
+    "answer": "Depending on the project, you will receive JPG, PNG, PDF, PSD, AI or other required source files."
+  }
+]

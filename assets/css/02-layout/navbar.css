@@ -1,0 +1,247 @@
+
+/* ==========================================================================
+   Navbar
+   Header • Logo • Navigation • Header Actions • Mobile Toggle
+   ========================================================================== */
+
+/* -------------------------------- Header ---------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  background: rgba(15, 15, 18, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* -------------------------------- Logo ------------------------------------ */
+.logo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo .logo-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.logo .logo-highlight {
+  color: var(--highlight);
+}
+
+/* ----------------------------- Navigation -------------------------------- */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.main-nav a {
+  position: relative;
+  padding: 9px 16px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-pill);
+  transition: color var(--transition-fast),
+              background var(--transition-fast);
+}
+
+.main-nav a:hover {
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+.main-nav a.active {
+  color: var(--text-primary);
+}
+
+.main-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--highlight);
+  border-radius: 2px;
+}
+
+/* ---------------------------- Header Actions ------------------------------ */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-actions .btn {
+  padding: 11px 22px;
+  font-size: 0.88rem;
+}
+
+/* ----------------------------- Mobile Toggle ------------------------------ */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ==========================================================================
+   Theme Toggle
+   Dark / Light Theme Switch
+   ========================================================================== */
+
+.theme-toggle {
+
+  position: relative;
+
+  width: 48px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--card);
+
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+
+}
+
+.theme-toggle:hover {
+
+  background: var(--card-hover);
+
+  border-color: var(--primary);
+
+  color: var(--primary);
+
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow);
+
+}
+
+.theme-toggle:active {
+
+  transform: scale(.95);
+
+}
+
+.theme-toggle:focus-visible {
+
+  outline: 2px solid var(--primary);
+
+  outline-offset: 4px;
+
+}
+
+
+/* ==========================================================================
+   Theme Icons
+   ========================================================================== */
+
+.theme-toggle svg {
+
+  width: 22px;
+  height: 22px;
+
+  transition:
+    opacity var(--transition),
+    transform var(--transition);
+
+}
+
+
+/* ==========================================================================
+   Dark Theme
+   ========================================================================== */
+
+.theme-toggle .icon-sun {
+
+  display: none;
+
+}
+
+.theme-toggle .icon-moon {
+
+  display: block;
+
+}
+
+
+/* ==========================================================================
+   Light Theme
+   ========================================================================== */
+
+[data-theme="light"] .theme-toggle .icon-sun {
+
+  display: block;
+
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+
+  display: none;
+
+}

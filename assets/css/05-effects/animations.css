@@ -1,0 +1,222 @@
+/* ==========================================================================
+   Animations
+   Floating WhatsApp • Keyframes
+   ========================================================================== */
+
+/* ==========================================================================
+   Floating WhatsApp Button
+   ========================================================================== */
+
+.float-whatsapp {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.35);
+  z-index: 90;
+  animation: pulse-glow 2.6s infinite;
+}
+
+.float-whatsapp svg {
+  width: 26px;
+  height: 26px;
+  color: #0f0f12;
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.35);
+  }
+
+  50% {
+    box-shadow: 0 10px 40px rgba(76, 175, 80, 0.6);
+  }
+}
+
+/* ==========================================================================
+   JavaScript Animation Helpers
+   Fade • Reveal • Hidden
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Hidden State
+   ========================================================================== */
+
+.hidden {
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+}
+
+
+/* ==========================================================================
+   Fade In
+   ========================================================================== */
+
+.fade-in {
+
+  opacity: 0;
+
+  transform: translateY(30px);
+
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+
+}
+
+.fade-in.show {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+
+/* ==========================================================================
+   Scale In
+   ========================================================================== */
+
+.scale-in {
+
+  opacity: 0;
+
+  transform: scale(.94);
+
+  transition:
+    opacity .5s ease,
+    transform .5s ease;
+
+}
+
+.scale-in.show {
+
+  opacity: 1;
+
+  transform: scale(1);
+
+}
+
+
+/* ==========================================================================
+   Slide Up
+   ========================================================================== */
+
+.slide-up {
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+
+}
+
+.slide-up.show {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+
+/* ==========================================================================
+   Slide Left
+   ========================================================================== */
+
+.slide-left {
+
+  opacity: 0;
+
+  transform: translateX(-40px);
+
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+
+}
+
+.slide-left.show {
+
+  opacity: 1;
+
+  transform: translateX(0);
+
+}
+
+
+/* ==========================================================================
+   Slide Right
+   ========================================================================== */
+
+.slide-right {
+
+  opacity: 0;
+
+  transform: translateX(40px);
+
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+
+}
+
+.slide-right.show {
+
+  opacity: 1;
+
+  transform: translateX(0);
+
+}
+
+
+/* ==========================================================================
+   Zoom Hover
+   ========================================================================== */
+
+.zoom-hover {
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+.zoom-hover:hover {
+
+  transform: translateY(-4px) scale(1.02);
+
+}
+
+
+/* ==========================================================================
+   Disable Animation
+   ========================================================================== */
+
+.no-animation {
+
+  animation: none !important;
+
+  transition: none !important;
+
+}

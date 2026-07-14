@@ -1,0 +1,97 @@
+/* ==========================================================================
+   About Page
+   About Hero • Portrait • Content • Milestones Timeline
+   ========================================================================== */
+
+/* ==========================================================================
+   About Hero Section
+   ========================================================================== */
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ==========================================================================
+   About Portrait
+   ========================================================================== */
+
+.about-portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, var(--surface), var(--bg-alt));
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-portrait .ap-initials {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.about-portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(124, 77, 255, 0.25),
+    transparent 55%
+  );
+}
+
+/* ==========================================================================
+   About Content
+   ========================================================================== */
+
+.about-copy .lede {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 18px;
+}
+
+/* ==========================================================================
+   Milestones Timeline
+   ========================================================================== */
+
+.milestones {
+  position: relative;
+  padding-left: 34px;
+  border-left: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.milestone {
+  position: relative;
+}
+
+.milestone::before {
+  content: '';
+  position: absolute;
+  left: -41px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--highlight);
+}
+
+.milestone .milestone-year {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--highlight);
+}

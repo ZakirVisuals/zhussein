@@ -1,0 +1,281 @@
+/* ==========================================================================
+   Contact Page
+   Contact Grid • Contact Information • Contact Form • Form Status
+   ========================================================================== */
+
+/* ==========================================================================
+   Contact Layout
+   ========================================================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ==========================================================================
+   Contact Information Panel
+   ========================================================================== */
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.info-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--highlight-soft);
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.info-row h4 {
+  margin-bottom: 4px;
+}
+
+.info-row p {
+  font-size: 0.92rem;
+}
+
+/* ==========================================================================
+   WhatsApp Contact Card
+   ========================================================================== */
+
+.whatsapp-card {
+  background: linear-gradient(155deg, var(--surface), var(--bg-alt));
+  border: 1px solid var(--border);
+}
+
+.whatsapp-card p {
+  margin: 10px 0 20px;
+}
+
+/* ==========================================================================
+   Contact Form Card
+   ========================================================================== */
+
+.form-card {
+  padding: 40px;
+}
+
+/* ==========================================================================
+   Form Fields
+   ========================================================================== */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  font-size: 0.95rem;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-strong);
+  background: var(--surface);
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Form Status Messages
+   Success • Error
+   ========================================================================== */
+
+#formStatus {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  display: none;
+}
+
+#formStatus.status-success {
+  display: block;
+  background: var(--success-soft);
+  color: var(--success);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+#formStatus.status-error {
+  display: block;
+  background: var(--error-soft);
+  color: var(--error);
+  border: 1px solid rgba(255, 92, 92, 0.3);
+}
+
+/* ==========================================================================
+   Contact Form States
+   EmailJS Integration
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Form Loading State
+   ========================================================================== */
+
+.form-loading {
+
+  pointer-events: none;
+
+  opacity: .75;
+
+}
+
+.form-loading button,
+.form-loading .btn {
+
+  cursor: wait;
+
+}
+
+
+/* ==========================================================================
+   Submit Button Loading
+   ========================================================================== */
+
+.btn-loading {
+
+  position: relative;
+
+  color: transparent !important;
+
+}
+
+.btn-loading::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 18px;
+  height: 18px;
+
+  margin-top: -9px;
+  margin-left: -9px;
+
+  border: 2px solid rgba(255,255,255,.35);
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: button-spinner .8s linear infinite;
+
+}
+
+
+/* ==========================================================================
+   Success Message
+   ========================================================================== */
+
+.form-success {
+
+  margin-top: 18px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(76,175,80,.25);
+
+  border-radius: var(--radius-md);
+
+  background: rgba(76,175,80,.10);
+
+  color: var(--success);
+
+}
+
+
+/* ==========================================================================
+   Error Message
+   ========================================================================== */
+
+.form-error {
+
+  margin-top: 18px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(255,92,92,.25);
+
+  border-radius: var(--radius-md);
+
+  background: rgba(255,92,92,.10);
+
+  color: var(--error);
+
+}
+
+
+/* ==========================================================================
+   Hidden State
+   ========================================================================== */
+
+.form-message {
+
+  display: none;
+
+}
+
+.form-message.show {
+
+  display: block;
+
+}
+
+
+/* ==========================================================================
+   Loading Spinner Animation
+   ========================================================================== */
+
+@keyframes button-spinner {
+
+  to {
+
+    transform: rotate(360deg);
+
+  }
+
+}

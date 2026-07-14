@@ -1,0 +1,552 @@
+/* ===================================================================
+   ZakirVisuals Website
+   Main CSS File
+   -------------------------------------------------------------------
+   Purpose : Load all CSS files in the correct order
+   Author  : ZakirVisuals
+   =================================================================== */
+
+
+
+/* ===================================================================
+   01 - BASE
+   -------------------------------------------------------------------
+   Base files must always load first.
+   =================================================================== */
+
+@import url("./01-base/variables.css");   /* Colors, Fonts, Variables, Theme */
+@import url("./01-base/base.css");        /* Reset, Typography, Body */
+@import url("./01-base/utilities.css");   /* Utility Classes */
+
+
+
+/* ===================================================================
+   02 - LAYOUT
+   -------------------------------------------------------------------
+   Global layout components.
+   =================================================================== */
+
+@import url("./02-layout/container.css"); /* Main Container */
+@import url("./02-layout/navbar.css");    /* Navigation */
+@import url("./02-layout/footer.css");    /* Footer */
+
+
+
+/* ===================================================================
+   03 - COMPONENTS
+   -------------------------------------------------------------------
+   Reusable UI Components.
+   =================================================================== */
+
+@import url("./03-components/buttons.css");   /* Buttons */
+@import url("./03-components/cards.css");     /* Cards */
+@import url("./03-components/hero.css");      /* Hero Section */
+@import url("./03-components/forms.css");     /* Forms */
+@import url("./03-components/sections.css");  /* Common Sections */
+@import url("./03-components/cta.css");       /* Call To Action */
+
+
+
+/* ===================================================================
+   04 - PAGE SPECIFIC CSS
+   -------------------------------------------------------------------
+   Individual page styles.
+   =================================================================== */
+
+@import url("./04-pages/home.css");
+@import url("./04-pages/about.css");
+@import url("./04-pages/portfolio.css");
+@import url("./04-pages/services.css");
+@import url("./04-pages/resources.css");
+@import url("./04-pages/contact.css");
+
+
+
+/* ===================================================================
+   05 - EFFECTS
+   -------------------------------------------------------------------
+   Animations & Responsive CSS
+   Responsive file should always be LAST.
+   =================================================================== */
+
+@import url("./05-effects/animations.css");
+@import url("./05-effects/responsive.css");
+
+
+
+/* ===================================================================
+   End Of Main CSS
+   =================================================================== */
+
+
+
+01-base/variables.css
+
+
+:root {
+  /* Light Theme Variables */
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Variables */
+}
+
+
+01 Colors
+02 Typography
+03 Font Sizes
+04 Font Weights
+05 Spacing
+06 Border Radius
+07 Shadows
+08 Transitions
+09 Z-index
+10 Container
+11 Header
+12 Light Theme
+13 Dark Theme
+
+
+/* ===================================================================
+   ZakirVisuals Website
+   Variables CSS
+   -------------------------------------------------------------------
+   Purpose :
+   - Global Variables
+   - Light Theme
+   - Dark Theme
+   - Typography
+   - Spacing
+   - Shadows
+   - Transitions
+
+   NOTE:
+   Edit values here to update the whole website.
+=================================================================== */
+
+
+
+/* ===================================================================
+   LIGHT THEME (DEFAULT)
+=================================================================== */
+
+:root {
+
+  /* ===============================================================
+     COLORS
+  =============================================================== */
+
+  --bg: #0f0f12;
+  --bg-alt: #15151b;
+
+  --surface: #1a1a24;
+  --surface-hover: #222230;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c8c8d0;
+  --text-tertiary: #9b9ba8;
+
+  --accent: #7c4dff;
+  --accent-strong: #9b73ff;
+
+  --highlight: #ffc107;
+  --highlight-strong: #ffd54f;
+
+  --success: #4caf50;
+  --success-soft: rgba(76,175,80,.12);
+
+  --error: #ff5c5c;
+  --error-soft: rgba(255,92,92,.12);
+
+  --border: rgba(255,255,255,.08);
+  --border-strong: rgba(255,255,255,.16);
+
+
+
+  /* ===============================================================
+     TYPOGRAPHY
+  =============================================================== */
+
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+
+
+  /* ===============================================================
+     FONT WEIGHT
+  =============================================================== */
+
+  --fw-regular:400;
+  --fw-medium:500;
+  --fw-semibold:600;
+  --fw-bold:700;
+
+
+
+  /* ===============================================================
+     BORDER RADIUS
+  =============================================================== */
+
+  --radius-sm:10px;
+  --radius-md:16px;
+  --radius-lg:24px;
+  --radius-pill:999px;
+
+
+
+  /* ===============================================================
+     SHADOWS
+  =============================================================== */
+
+  --shadow-sm:0 4px 12px rgba(0,0,0,.18);
+
+  --shadow-md:0 8px 22px rgba(0,0,0,.22);
+
+  --shadow-lg:0 15px 40px rgba(0,0,0,.28);
+
+  --shadow-lift:0 20px 60px rgba(0,0,0,.35);
+
+
+
+  /* ===============================================================
+     TRANSITIONS
+  =============================================================== */
+
+  --transition-fast:.25s ease;
+
+  --transition:.35s ease;
+
+  --ease:cubic-bezier(.4,0,.2,1);
+
+
+
+  /* ===============================================================
+     SPACING
+  =============================================================== */
+
+  --section-space:110px;
+
+  --container-width:1200px;
+
+  --header-height:78px;
+
+}
+
+
+
+/* ===================================================================
+   DARK THEME
+   Applied using:
+   <html data-theme="dark">
+=================================================================== */
+
+[data-theme="dark"]{
+
+  /* ===============================================================
+     COLORS
+  =============================================================== */
+
+  --bg:#0b0b0d;
+  --bg-alt:#111118;
+
+  --surface:#181820;
+  --surface-hover:#21212b;
+
+  --text-primary:#ffffff;
+  --text-secondary:#d2d2db;
+  --text-tertiary:#9f9fac;
+
+  --border:rgba(255,255,255,.08);
+  --border-strong:rgba(255,255,255,.16);
+
+}
+
+
+
+/* ===================================================================
+   ZakirVisuals Website
+   Base CSS
+   -------------------------------------------------------------------
+   Purpose:
+   - CSS Reset
+   - Base HTML Elements
+   - Typography
+   - Accessibility
+   =================================================================== */
+
+
+
+/* ===================================================================
+   CSS RESET
+   =================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ===================================================================
+   HTML
+   =================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* ===================================================================
+   Reduced Motion Accessibility
+   =================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+}
+
+
+
+/* ===================================================================
+   BODY
+   =================================================================== */
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+
+
+/* ===================================================================
+   Images
+   =================================================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* ===================================================================
+   Links
+   =================================================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+/* ===================================================================
+   Lists
+   =================================================================== */
+
+ul {
+  list-style: none;
+}
+
+
+
+/* ===================================================================
+   Buttons
+   =================================================================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+
+
+/* ===================================================================
+   Form Elements
+   =================================================================== */
+
+input,
+textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+
+
+/* ===================================================================
+   Accessibility Focus
+   =================================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+
+
+/* ===================================================================
+   Typography
+   =================================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+
+/* ===================================================================
+   ZakirVisuals Website
+   Utilities CSS
+   -------------------------------------------------------------------
+   Purpose:
+   Reusable utility classes used throughout the website.
+   =================================================================== */
+
+
+
+/* ===================================================================
+   Layout Utilities
+   =================================================================== */
+
+.container {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+
+
+/* ===================================================================
+   Section Spacing
+   =================================================================== */
+
+section {
+  padding: 96px 0;
+}
+
+
+
+/* ===================================================================
+   Section Header
+   =================================================================== */
+
+.section-header {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.section-header.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--highlight);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+
+.section-header h2 {
+  margin-bottom: 18px;
+}
+
+.section-header p {
+  font-size: 1rem;
+}
+
+
+
+/* ===================================================================
+   Highlight Text
+   =================================================================== */
+
+.highlight {
+  color: var(--highlight);
+}
+
+/* ===================================================================
+   ZakirVisuals Website
+   Container CSS
+   -------------------------------------------------------------------
+   Purpose :
+   Global Layout Container
+
+   NOTE:
+   Edit this file only if you want to change the
+   website width or horizontal spacing.
+=================================================================== */
+
+
+
+/* ===================================================================
+   MAIN CONTAINER
+=================================================================== */
+
+.container {
+    width: min(1120px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+
+
+/* ===================================================================
+   END OF FILE
+=================================================================== */
+
